@@ -1,0 +1,12 @@
+/* TEAM */
+Equinox Health Services Team
+Contact: equinoxhealthsupplies@gmail.com
+
+/* SITE */
+Last update: 2026-06-01
+Technologies: HTML5, CSS3, JavaScript
+Hosting: Vercel
+Domain: Porkbun
+
+/* THANKS */
+Thanks to our customers across all 47 counties in Kenya

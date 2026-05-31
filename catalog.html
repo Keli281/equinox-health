@@ -3,40 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Catalog | Equinox Health Services</title>
+  
+  <!-- Primary SEO Tags -->
+  <title>Medical Equipment Catalog | Mobility Aids, Diagnostics & More | Equinox Health</title>
+  <meta name="description" content="Browse our complete catalog of 65+ medical equipment products including wheelchairs, BP monitors, orthopedic supports, hospital beds & patient care items. Best prices in Kenya. WhatsApp checkout available.">
+  <meta name="keywords" content="medical equipment catalog, hospital supplies Kenya, mobility aids for sale, diagnostic tools Kenya, orthopedic supports, patient care products, wheelchairs Nairobi">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Medical Equipment Catalog | Equinox Health Services">
+  <meta property="og:description" content="Shop 65+ premium medical products. Wheelchairs, BP monitors, hospital beds & more. WhatsApp checkout available.">
+  <meta property="og:url" content="https://equinoxhealth.co.ke/catalog.html">
+  <meta property="og:type" content="website">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://equinoxhealth.co.ke/catalog.html">
+  
+  <!-- Fonts & Styles -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/catalog.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/equinox-logo.jpg">
+  
+  <!-- Structured Data for Catalog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Medical Equipment Catalog",
+    "description": "Complete list of medical equipment available from Equinox Health Services",
+    "numberOfItems": "65",
+    "url": "https://equinoxhealth.co.ke/catalog.html"
+  }
+  </script>
 </head>
 <body>
-    <header class="site-header">
+  <header class="site-header">
     <div class="container header-container">
-        <div class="logo">
+      <div class="logo">
         <a href="index.html">Equinox<span>Health</span></a>
         <span class="tagline">Medical Supplies</span>
-        </div>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
         <i class="fas fa-bars"></i>
-        </button>
-        <nav class="nav-menu" id="navMenu">
+      </button>
+      <nav class="nav-menu" id="navMenu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="catalog.html" class="active">Catalog</a></li>
-            <li><a href="index.html#services">Services</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html" class="active">Catalog</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
-        </nav>
+      </nav>
     </div>
-    </header>
+  </header>
 
   <main class="catalog-main" style="background-image: url('assets/images/background-image2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <div class="container">
       <div class="catalog-header"><h1>Medical Equipment Catalog</h1><p>Premium quality mobility aids, diagnostics, orthopedics, and patient care products</p></div>
       
       <div class="catalog-controls">
-        <div class="search-bar"><i class="fas fa-search"></i><input type="text" id="searchInput" placeholder="Search products..."></div>
-        <div class="filter-buttons" id="filterButtons"><button data-cat="all" class="filter-btn active">All Products</button><button data-cat="mobility" class="filter-btn">Mobility Aids</button><button data-cat="diagnostics" class="filter-btn">Diagnostics</button><button data-cat="orthopedic" class="filter-btn">Orthopedic Supports</button><button data-cat="patient-care" class="filter-btn">Patient Care</button></div>
+        <div class="search-bar"><i class="fas fa-search"></i><input type="text" id="searchInput" placeholder="Search products..." aria-label="Search products"></div>
+        <div class="filter-buttons" id="filterButtons">
+          <button data-cat="all" class="filter-btn active">All Products</button>
+          <button data-cat="mobility" class="filter-btn">Mobility Aids</button>
+          <button data-cat="diagnostics" class="filter-btn">Diagnostics</button>
+          <button data-cat="orthopedic" class="filter-btn">Orthopedic Supports</button>
+          <button data-cat="patient-care" class="filter-btn">Patient Care</button>
+        </div>
       </div>
       
       <div id="productsGrid" class="products-grid"></div>
@@ -44,11 +81,42 @@
   </main>
 
   <!-- Floating Order List Sidebar -->
-  <div class="order-sidebar-trigger" id="orderListTrigger"><i class="fas fa-shopping-cart"></i><span id="cartCount">0</span></div>
-  <div class="order-sidebar" id="orderSidebar"><div class="sidebar-header"><h3><i class="fas fa-clipboard-list"></i> Your Order List</h3><button class="close-sidebar" id="closeSidebar"><i class="fas fa-times"></i></button></div><div class="sidebar-content" id="orderListItems"><p class="empty-order">No items added yet. Browse products and click "Add to Order List".</p></div><div class="sidebar-footer"><div class="order-total"><span>Total:</span><span id="orderTotal">KES 0</span></div><button id="whatsappCheckoutBtn" class="btn btn-primary w-full"><i class="fab fa-whatsapp"></i> Checkout via WhatsApp</button></div></div>
+  <div class="order-sidebar-trigger" id="orderListTrigger" aria-label="Shopping cart"><i class="fas fa-shopping-cart"></i><span id="cartCount">0</span></div>
+  <div class="order-sidebar" id="orderSidebar">
+    <div class="sidebar-header">
+      <h3><i class="fas fa-clipboard-list"></i> Your Order List</h3>
+      <button class="close-sidebar" id="closeSidebar" aria-label="Close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="sidebar-content" id="orderListItems">
+      <p class="empty-order">No items added yet. Browse products and click "Add to Order List".</p>
+    </div>
+    <div class="sidebar-footer">
+      <div class="order-total"><span>Total:</span><span id="orderTotal">KES 0</span></div>
+      <button id="whatsappCheckoutBtn" class="btn btn-primary w-full"><i class="fab fa-whatsapp"></i> Checkout via WhatsApp</button>
+    </div>
+  </div>
   <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-  <footer class="site-footer"><div class="container footer-grid"><div class="footer-col"><h4>Equinox Health Services</h4><p>Trusted medical equipment supplier across Kenya.</p></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="catalog.html">Catalog</a></li></ul></div><div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="disclaimer.html">Medical Disclaimer</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Equinox Health Services</p></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Equinox Health Services</h4>
+        <p>Trusted medical equipment supplier across Kenya.</p>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="catalog.html">Catalog</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="disclaimer.html">Medical Disclaimer</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Equinox Health Services – Empowering healthier lives.</p></div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/254706572762?text=Hello%20Equinox%20Health%20Services,%20I%20need%20assistance%20with%20medical%20equipment" 
+     class="floating-wa" 
+     target="_blank"
+     rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Chat with us</span>
+  </a>
 
   <script src="assets/js/products-data.js"></script>
   <script src="assets/js/catalog.js"></script>

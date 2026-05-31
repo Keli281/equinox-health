@@ -33,7 +33,7 @@ function filterAndSearch(){ let active = document.querySelector('.filter-btn.act
 
 document.getElementById('filterButtons').addEventListener('click',(e)=>{ if(e.target.classList.contains('filter-btn')){ document.querySelectorAll('.filter-btn').forEach(btn=>btn.classList.remove('active')); e.target.classList.add('active'); filterAndSearch(); } });
 document.getElementById('searchInput').addEventListener('input', filterAndSearch);
-document.getElementById('whatsappCheckoutBtn').addEventListener('click',()=>{ if(orderList.length===0){ alert('Your order list is empty.'); return; } let msg = "Hello Equinox Health,%0AI would like to order:%0A"; orderList.forEach(i=>{ msg += `- ${i.name} x ${i.quantity} = KES ${(i.price*i.quantity).toLocaleString()}%0A`; }); msg += `%0ATotal: KES ${orderList.reduce((s,i)=>s+(i.price*i.quantity),0).toLocaleString()}%0ADelivery: Nairobi / Other County%0AThank you!`; window.open(`https://wa.me/254706572762?text=${msg}`,'_blank'); });
+document.getElementById('whatsappCheckoutBtn').addEventListener('click',()=>{ if(orderList.length===0){ alert('Your order list is empty.'); return; } let msg = "Hello Equinox Health,%0AI would like to order:%0A"; orderList.forEach(i=>{ msg += `- ${i.name} x ${i.quantity} = KES ${(i.price*i.quantity).toLocaleString()}%0A`; }); msg += `%0ATotal: KES ${orderList.reduce((s,i)=>s+(i.price*i.quantity),0).toLocaleString()}%0AThank you!`; window.open(`https://wa.me/254706572762?text=${msg}`,'_blank'); });
 
 // Sidebar UI
 const trigger = document.getElementById('orderListTrigger'), sidebar = document.getElementById('orderSidebar'), overlay = document.getElementById('sidebarOverlay'), closeBtn = document.getElementById('closeSidebar');

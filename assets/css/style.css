@@ -154,4 +154,15 @@ img { max-width: 100%; height: auto; display: block; }
   .social-icons { justify-content: center; }
   .category-img { min-height: 220px; padding: 1rem; }
   .category-img img { max-height: 180px; }
+  
+  /* MAKE HERO IMAGE SMALLER ON MOBILE ONLY */
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .hero-image img { 
+    max-width: 80%;
+    max-height: 250px;
+  }
 }

@@ -45,13 +45,19 @@ img { max-width: 100%; height: auto; display: block; }
 .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
 .btn-outline:hover { background: var(--primary); color: white; transform: translateY(-2px); }
 
-/* EXTRA DARK BOX SHADOW ONLY AROUND THE HERO IMAGE */
+/* HERO IMAGE - SLIGHTLY REDUCED ON DESKTOP */
+.hero-image { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hero-image img { 
   border-radius: 24px; 
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 8px 20px rgba(0, 0, 0, 0.4);
-  max-height: 400px; 
+  max-width: 85%;
+  max-height: 350px;
   object-fit: contain; 
-  width: 100%; 
+  width: auto;
   background: var(--gray-50);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -155,12 +161,7 @@ img { max-width: 100%; height: auto; display: block; }
   .category-img { min-height: 220px; padding: 1rem; }
   .category-img img { max-height: 180px; }
   
-  /* MAKE HERO IMAGE SMALLER ON MOBILE ONLY */
-  .hero-image {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
+  /* HERO IMAGE EVEN SMALLER ON MOBILE */
   .hero-image img { 
     max-width: 80%;
     max-height: 250px;

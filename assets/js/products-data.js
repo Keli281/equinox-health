@@ -1,4 +1,5 @@
 const productsData = [
+  // ========== MOBILITY AIDS (22 products) ==========
   { id: 1, name: "Standard Wheelchair", price: 13000, category: "mobility", image: "standard-wheelchair.jpg" },
   { id: 2, name: "Lightweight Folding Wheelchair", price: 22000, category: "mobility", image: "lightweight-wheelchair.jpg" },
   { id: 3, name: "Heavy Duty Wheelchair (150kg)", price: 28500, category: "mobility", image: "heavy-duty-wheelchair.jpg" },
@@ -21,6 +22,8 @@ const productsData = [
   { id: 20, name: "Commode Chair with Wheels", price: 8000, category: "mobility", image: "commode-wheels.jpg" },
   { id: 21, name: "Commode Chair without Wheels", price: 7500, category: "mobility", image: "commode-chair.jpg" },
   { id: 22, name: "Bedside Commode Chair", price: 6500, category: "mobility", image: "bedside-commode.jpg" },
+
+  // ========== DIAGNOSTICS (19 products) ==========
   { id: 23, name: "Omron Blood Pressure Monitor", price: 5000, category: "diagnostics", image: "omron-bp.jpg" },
   { id: 24, name: "Jumper Blood Pressure Monitor", price: 3500, category: "diagnostics", image: "jumper-bp.jpg" },
   { id: 25, name: "Digital Blood Pressure Monitor", price: 4500, category: "diagnostics", image: "digital-bp.jpg" },
@@ -40,6 +43,8 @@ const productsData = [
   { id: 39, name: "DP10 Ultrasound Machine", price: 350000, category: "diagnostics", image: "ultrasound.jpg" },
   { id: 40, name: "Hearing Aids", price: 4000, category: "diagnostics", image: "hearing-aids.jpg" },
   { id: 41, name: "Infrared Light with Stand", price: 20000, category: "diagnostics", image: "infrared-light.jpg" },
+
+  // ========== ORTHOPEDIC SUPPORTS (11 products) ==========
   { id: 42, name: "Lumbar Corset (Back Support)", price: 2500, category: "orthopedic", image: "lumbar-corset.jpg" },
   { id: 43, name: "Philadelphia Cervical Collar", price: 2600, category: "orthopedic", image: "cervical-collar.jpg" },
   { id: 44, name: "Knee Brace (Hinged)", price: 3200, category: "orthopedic", image: "knee-brace.jpg" },
@@ -51,9 +56,11 @@ const productsData = [
   { id: 50, name: "Heel Silicone Insoles", price: 2200, category: "orthopedic", image: "heel-insoles.jpg" },
   { id: 51, name: "Donut Cushion", price: 4200, category: "orthopedic", image: "donut-cushion.jpg" },
   { id: 52, name: "Dilator Set", price: 4500, category: "orthopedic", image: "dilator-set.jpg" },
+
+  // ========== PATIENT CARE (14 products including Ripple Mattress) ==========
   { id: 53, name: "Double Crank Hospital Bed", price: 38000, category: "patient-care", image: "double-crank-bed.jpg" },
   { id: 54, name: "Single Crank Hospital Bed", price: 28000, category: "patient-care", image: "single-crank-bed.jpg" },
-  { id: 55, name: "Anti-Bedsore Air Mattress", price: 7500, category: "patient-care", image: "ripple-mattress.jpg" },
+  { id: 55, name: "Ripple Mattress (Anti-Bedsore Air Mattress)", price: 7500, category: "patient-care", image: "ripple-mattress.jpg" },
   { id: 56, name: "Patient Lift Sling", price: 4200, category: "patient-care", image: "lift-sling.jpg" },
   { id: 57, name: "Bed Pan (Stainless Steel)", price: 1100, category: "patient-care", image: "bed-pan.jpg" },
   { id: 58, name: "Urine Bottle", price: 1800, category: "patient-care", image: "urine-bottle.jpg" },

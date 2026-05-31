@@ -1,14 +1,52 @@
-// Mobile menu toggle
-const toggleBtn = document.getElementById('mobileToggle');
-const navMenu = document.getElementById('navMenu');
-if(toggleBtn && navMenu){
-  toggleBtn.addEventListener('click', ()=> navMenu.classList.toggle('active'));
-  document.querySelectorAll('.nav-menu a').forEach(link => link.addEventListener('click', ()=> navMenu.classList.remove('active')));
-}
+// Mobile menu toggle - WORKS ON ALL PAGES
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleBtn = document.getElementById('mobileToggle');
+  const navMenu = document.getElementById('navMenu');
+  
+  if (toggleBtn && navMenu) {
+    // Toggle menu when hamburger is clicked
+    toggleBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      navMenu.classList.toggle('active');
+      // Change icon when open/closed
+      const icon = toggleBtn.querySelector('i');
+      if (navMenu.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+    
+    // Close menu when a link is clicked
+    const navLinks = navMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        navMenu.classList.remove('active');
+        const icon = toggleBtn.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!navMenu.contains(event.target) && !toggleBtn.contains(event.target)) {
+        navMenu.classList.remove('active');
+        const icon = toggleBtn.querySelector('i');
+        if (icon) {
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        }
+      }
+    });
+  }
+});
 
 // Contact form toggle to WhatsApp
 const contactForm = document.getElementById('contactForm');
-if(contactForm){
+if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const name = document.getElementById('contactName').value;
@@ -26,6 +64,9 @@ if(contactForm){
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const target = document.querySelector(this.getAttribute('href'));
-    if(target){ e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+    if (target) { 
+      e.preventDefault(); 
+      target.scrollIntoView({ behavior: 'smooth' }); 
+    }
   });
 });

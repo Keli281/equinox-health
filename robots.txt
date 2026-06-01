@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 Disallow: /assets/js/
 Disallow: /assets/css/
-Sitemap: https://equinoxhealth.co.ke/sitemap.xml
+Sitemap: https://equinoxhealthsupplies.co.ke/sitemap.xml
 
 # Crawl delay for slower bots
 Crawl-delay: 5

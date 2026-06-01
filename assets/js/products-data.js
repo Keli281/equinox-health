@@ -23,12 +23,12 @@ const productsData = [
   { id: 21, name: "Commode Chair without Wheels", price: 7500, category: "mobility", image: "commode-chair.jpg" },
   { id: 22, name: "Bedside Commode Chair", price: 6500, category: "mobility", image: "bedside-commode.jpg" },
 
-  // ========== DIAGNOSTICS (19 products) ==========
+  // ========== DIAGNOSTICS (20 products - added Pentorch) ==========
   { id: 23, name: "Omron Blood Pressure Monitor", price: 5000, category: "diagnostics", image: "omron-bp.jpg" },
   { id: 24, name: "Jumper Blood Pressure Monitor", price: 3500, category: "diagnostics", image: "jumper-bp.jpg" },
   { id: 25, name: "Digital Blood Pressure Monitor", price: 4500, category: "diagnostics", image: "digital-bp.jpg" },
   { id: 26, name: "Upper Arm BP Monitor (Premium)", price: 6200, category: "diagnostics", image: "premium-bp.jpg" },
-  { id: 27, name: "Glucose Meter Kit (with strips)", price: 1800, category: "diagnostics", image: "glucose-meter.jpg" },
+  { id: 27, name: "Glucose Meter Kit (Full Kit)", price: 2800, category: "diagnostics", image: "glucose-meter.jpg" }, // UPDATED price from 1800 to 2800
   { id: 28, name: "Pulse Oximeter (Finger Tip)", price: 2200, category: "diagnostics", image: "oximeter.jpg" },
   { id: 29, name: "Paediatric Pulse Oximeter", price: 1800, category: "diagnostics", image: "pediatric-oximeter.jpg" },
   { id: 30, name: "Digital Thermometer", price: 800, category: "diagnostics", image: "digital-thermometer.jpg" },
@@ -40,24 +40,29 @@ const productsData = [
   { id: 36, name: "Suction Machine", price: 22000, category: "diagnostics", image: "suction-machine.jpg" },
   { id: 37, name: "Stethoscope (Dual Head)", price: 1800, category: "diagnostics", image: "stethoscope.jpg" },
   { id: 38, name: "Fetal Doppler", price: 4500, category: "diagnostics", image: "fetal-doppler.jpg" },
-  { id: 39, name: "DP10 Ultrasound Machine", price: 350000, category: "diagnostics", image: "ultrasound.jpg" },
+  { id: 39, name: "DP10 Mindray Ultrasound Machine", price: 360000, category: "diagnostics", image: "ultrasound.jpg" }, // UPDATED price from 350k to 360k, name updated
   { id: 40, name: "Hearing Aids", price: 4000, category: "diagnostics", image: "hearing-aids.jpg" },
   { id: 41, name: "Infrared Light with Stand", price: 20000, category: "diagnostics", image: "infrared-light.jpg" },
+  { id: 66, name: "Pentorch (Penlight Torch)", price: 750, category: "diagnostics", image: "pentorch.jpg" }, // NEW PRODUCT
 
-  // ========== ORTHOPEDIC SUPPORTS (11 products) ==========
+  // ========== ORTHOPEDIC SUPPORTS (15 products - added 4 new) ==========
   { id: 42, name: "Lumbar Corset (Back Support)", price: 2500, category: "orthopedic", image: "lumbar-corset.jpg" },
   { id: 43, name: "Philadelphia Cervical Collar", price: 2600, category: "orthopedic", image: "cervical-collar.jpg" },
-  { id: 44, name: "Knee Brace (Hinged)", price: 3200, category: "orthopedic", image: "knee-brace.jpg" },
+  { id: 44, name: "Knee Brace (Hinged)", price: 3000, category: "orthopedic", image: "knee-brace.jpg" }, // UPDATED price from 3200 to 3000
   { id: 45, name: "Compression Stockings (Pair)", price: 1500, category: "orthopedic", image: "compression-stockings.jpg" },
   { id: 46, name: "Arm Sling (Adjustable)", price: 900, category: "orthopedic", image: "arm-sling.jpg" },
+  { id: 67, name: "Paediatric Arm Sling", price: 1500, category: "orthopedic", image: "paediatric-arm-sling.jpg" }, // NEW PRODUCT
   { id: 47, name: "Wrist Splint", price: 1200, category: "orthopedic", image: "wrist-splint.jpg" },
   { id: 48, name: "Ankle Support Brace", price: 1300, category: "orthopedic", image: "ankle-brace.jpg" },
   { id: 49, name: "Posture Corrector", price: 2800, category: "orthopedic", image: "posture-corrector.jpg" },
-  { id: 50, name: "Heel Silicone Insoles", price: 2200, category: "orthopedic", image: "heel-insoles.jpg" },
+  { id: 50, name: "Silicone Insoles (Pair)", price: 2800, category: "orthopedic", image: "silicone-insoles.jpg" }, // NEW PRODUCT
   { id: 51, name: "Donut Cushion", price: 4200, category: "orthopedic", image: "donut-cushion.jpg" },
   { id: 52, name: "Dilator Set", price: 4500, category: "orthopedic", image: "dilator-set.jpg" },
+  { id: 68, name: "Heel Spur Fix Insoles (Pair)", price: 2200, category: "orthopedic", image: "heel-spur-insoles.jpg" }, // NEW PRODUCT
+  { id: 69, name: "Heel Silicone Insoles (Pair)", price: 2000, category: "orthopedic", image: "heel-silicone-insoles.jpg" }, // NEW PRODUCT
+  { id: 70, name: "Skin Traction Kit", price: 1800, category: "orthopedic", image: "skin-traction-kit.jpg" }, // NEW PRODUCT
 
-  // ========== PATIENT CARE (14 products including Ripple Mattress) ==========
+  // ========== PATIENT CARE (15 products - added Spacer Mask) ==========
   { id: 53, name: "Double Crank Hospital Bed", price: 38000, category: "patient-care", image: "double-crank-bed.jpg" },
   { id: 54, name: "Single Crank Hospital Bed", price: 28000, category: "patient-care", image: "single-crank-bed.jpg" },
   { id: 55, name: "Ripple Mattress (Anti-Bedsore Air Mattress)", price: 7500, category: "patient-care", image: "ripple-mattress.jpg" },
@@ -70,5 +75,6 @@ const productsData = [
   { id: 62, name: "Patient Positioning Wedge", price: 3200, category: "patient-care", image: "wedge.jpg" },
   { id: 63, name: "Foot Massager", price: 2200, category: "patient-care", image: "foot-massager.jpg" },
   { id: 64, name: "Massage Gun", price: 2500, category: "patient-care", image: "massage-gun.jpg" },
-  { id: 65, name: "Rehabilitation Hand Robot Glove", price: 35000, category: "patient-care", image: "hand-glove.jpg" }
+  { id: 65, name: "Rehabilitation Hand Robot Glove", price: 35000, category: "patient-care", image: "hand-glove.jpg" },
+  { id: 71, name: "Spacer Mask", price: 1700, category: "patient-care", image: "spacer-mask.jpg" } // NEW PRODUCT
 ];

@@ -276,6 +276,43 @@ body.sidebar-open {
   width: 100%;
 }
 
+/* Services Banner on Catalog Page */
+.services-banner {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  border-radius: 24px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.services-banner-content i {
+  font-size: 2.5rem;
+  color: var(--accent-light);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.services-banner-content h3 {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.services-banner-content p {
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 1rem;
+}
+
+.services-banner-content .btn-primary {
+  background: white;
+  color: var(--primary);
+}
+
+.services-banner-content .btn-primary:hover {
+  background: var(--accent-light);
+  color: white;
+}
+
 /* ============================================
    RESPONSIVE STYLES - ALL DEVICES
    ============================================ */
@@ -335,6 +372,8 @@ body.sidebar-open {
   .sidebar-footer { padding: 0.8rem; }
   .order-total { font-size: 0.9rem; margin-bottom: 0.8rem; }
   .sidebar-footer .btn-primary { padding: 0.6rem; font-size: 0.85rem; }
+
+
 }
 
 /* Small Mobile (up to 480px) */

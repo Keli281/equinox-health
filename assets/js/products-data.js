@@ -44,6 +44,13 @@ const productsData = [
   { id: 40, name: "Pentorch (Penlight Torch)", price: 750, category: "diagnostics", image: "pentorch.jpg" },
   { id: 41, name: "Vein Finder", price: 7500, category: "diagnostics", image: "vein-finder.jpg" },
   { id: 42, name: "On Call Machine with Strips", price: 2600, category: "diagnostics", image: "on-call-machine.jpg" },
+  { id: 68, name: "Haematology Machine", price: 370000, category: "diagnostics", image: "haematology-machine.jpg" }, // NEW
+  { id: 69, name: "Centrifuge", price: 9500, category: "diagnostics", image: "centrifuge.jpg" }, // NEW
+  { id: 70, name: "Round Centrifuge", price: 8500, category: "diagnostics", image: "round-centrifuge.jpg" }, // NEW
+  { id: 71, name: "Microscope", price: 25000, category: "diagnostics", image: "microscope.jpg" }, // NEW
+  { id: 72, name: "Laboratory Oven", price: 42000, category: "diagnostics", image: "laboratory-oven.jpg" }, // NEW
+  { id: 73, name: "Water Distiller", price: 38000, category: "diagnostics", image: "water-distiller.jpg" }, // NEW
+  { id: 74, name: "Purple Tops (100s)", price: 900, category: "diagnostics", image: "purple-tops.jpg" }, // NEW
 
   // ========== ORTHOPEDIC SUPPORTS ==========
   { id: 43, name: "Lumbar Corset (Back Support)", price: 3000, category: "orthopedic", image: "lumbar-corset.jpg" },
@@ -72,5 +79,10 @@ const productsData = [
   { id: 64, name: "Foot Massager", price: 2200, category: "patient-care", image: "foot-massager.jpg" },
   { id: 65, name: "Massage Gun", price: 2800, category: "patient-care", image: "massage-gun.jpg" },
   { id: 66, name: "Rehabilitation Hand Robot Glove", price: 35000, category: "patient-care", image: "hand-glove.jpg" },
-  { id: 67, name: "Spacer Mask", price: 1700, category: "patient-care", image: "spacer-mask.jpg" }
+  { id: 67, name: "Spacer Mask", price: 1700, category: "patient-care", image: "spacer-mask.jpg" },
+  { id: 75, name: "Delivery Bed", price: 32000, category: "patient-care", image: "delivery-bed.jpg" }, // NEW
+  { id: 76, name: "Operating Table", price: 280000, category: "patient-care", image: "operating-table.jpg" }, // NEW
+  { id: 77, name: "3 Function Electric Bed", price: 120000, category: "patient-care", image: "3-function-electric-bed.jpg" }, // NEW
+  { id: 78, name: "Emergency Trolley / Crash Cart", price: 58000, category: "patient-care", image: "crash-cart.jpg" }, // NEW
+  { id: 79, name: "Theatre Light", price: 350000, category: "patient-care", image: "theatre-light.jpg" } // NEW
 ];

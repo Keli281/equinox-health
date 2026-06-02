@@ -1,4 +1,4 @@
-# robots.txt for Equinox Health Services
+# robots.txt for Equinox Health Supplies
 User-agent: *
 Allow: /
 Disallow: /assets/js/

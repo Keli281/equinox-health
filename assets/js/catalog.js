@@ -17,6 +17,7 @@ function renderProducts(products) {
       <img class="product-img" src="assets/images/${p.image}" alt="${p.name}" onerror="this.src='https://placehold.co/300x200/EFF3F8/0B3B5F?text=${encodeURIComponent(p.name.slice(0,15))}'">
       <div class="product-info">
         <div class="product-name">${p.name}</div>
+        <div class="product-description">${p.description || 'High-quality medical equipment from Equinox Health Supplies.'}</div>
         <div class="product-condition"><i class="fas fa-check-circle"></i> New</div>
         <div class="product-price">KES ${p.price.toLocaleString()}</div>
         <div class="quantity-control"><input type="number" id="qty-${p.id}" value="1" min="1" style="width:70px"></div>
